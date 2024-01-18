@@ -36,8 +36,7 @@ def test_open_website(browser):
     # Get the current date and time
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-
-# Capture a screenshot and save it with the current date and time in the filename
+    # Capture a screenshot and save it with the current date and time in the filename
 
     screenshot_filename = os.path.join(screenshot_directory, f"screenshot_{current_time}.png")
     browser.save_screenshot(screenshot_filename)
